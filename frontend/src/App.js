@@ -156,7 +156,7 @@ function App() {
 
     console.log(formData);
 
-    axios.post('http://localhost:5000/user/save_data', formData)
+    axios.post('http://52.204.230.155:5000/user/save_data', formData)
     .then(response => {
       console.log('Data sent successfully:', response.data);
       setAllMatchPartners(response.data.matchUsers);
